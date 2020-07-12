@@ -1,0 +1,20 @@
+#
+# Node files
+#
+node_modules/
+yarn-error.log
+.env
+
+#
+# dist directories and files
+#
+dist/
+
+#
+# OS generated files
+#
+.DS_Store
+Thumbs.db
+
+# Generated source-code
+coverage/
