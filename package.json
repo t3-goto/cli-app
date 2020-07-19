@@ -5,11 +5,11 @@
   "license": "MIT",
   "scripts": {
     "start.js": "npm run bundle && node dist/app.js",
-    "start.ts": "ts-node src/app.ts",
+    "start.ts": "cross-env NODE_ENV=development ts-node src/app.ts",
     "start.bin": "npm run build && ./bin/app-win.exe",
     "build": "npm run bundle && npm run pkg",
     "bundle": "webpack --config webpack.prod.config.js",
-    "pkg": "rm bin/* && pkg dist/app.js -o bin/app -t win,linux",
+    "pkg": "rm -rf bin && pkg dist/app.js -o bin/app -t win",
     "lint": "eslint src",
     "test": "mocha --watch-extensions ts --require espower-typescript/guess test/**/*.ts"
   },
