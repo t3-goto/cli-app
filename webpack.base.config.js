@@ -14,6 +14,10 @@ module.exports = {
   // ________________________________________________
   // 処理対象の設定（Node.jsランタイム向けビルド設定）
   target: 'node',
+  node: {
+    __dirname: false,
+    __filename: false,
+  },
   externals: [nodeExternals()],
   // ________________________________________________
   // loaderの設定
