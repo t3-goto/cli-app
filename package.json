@@ -63,6 +63,6 @@
   },
   "dependencies": {
     "commander": "^5.1.0",
-    "marked": "^1.1.0"
+    "marked": "^4.0.10"
   }
 }
